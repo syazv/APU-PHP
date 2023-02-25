@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Question 6</title>
+        <style>
+            table, tr, td, th{
+                border: 1px solid;
+            }
+
+            .table2{
+                margin-inline: 10px;
+            }
+
+            table.inner tr td{
+                padding: 20px 20px 20px 20px;
+            }
+
+            table.inner2{
+                padding: 20px 20px 20px 20px;
+            }
+
+            table.inner2 td{
+                margin: 30px 30px 30px 30px;
+            }
+        </style>
+    </head>
+    
+    <body>
+       <h3>a.</h3>
+       <table>
+            <tbody>
+                <tr>
+                    <td>A</td>
+                    <td>B</td>
+                    <td>C</td>
+                </tr>
+                <tr>
+                    <td>D</td>
+                    <td>E</td>
+                    <td>F</td>
+                </tr>
+            </tbody>
+       </table>
+       <h3>b.</h3>
+       <table class="table2">
+            <tbody>
+                <tr>
+                    <td>A</td>
+                    <td>D</td>
+                </tr>
+                <tr>
+                    <td>B</td>
+                    <td>E</td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td>F</td>
+                </tr>
+            </tbody>
+       </table>
+       <h3>c.</h3>
+       <table>
+        <thead>
+            <tr>
+                <th colspan="3">Title goes here</th>
+            </tr>
+        </thead>
+            <tbody>
+                <tr>
+                    <td>A</td>
+                    <td>C</td>
+                    <td>E</td>
+                </tr>
+                <tr>
+                    <td>B</td>
+                    <td>D</td>
+                    <td>F</td>
+                </tr>
+            </tbody>
+       </table>
+       <h3>d.</h3>
+       <table>
+            <tbody>
+                <tr>
+                    <td rowspan="3">Title goes here</td>
+                    <td>A</td>
+                    <td>D</td>
+                </tr>
+                <tr>
+                    <td>B</td>
+                    <td>E</td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td>F</td>
+                </tr>
+            </tbody>
+       </table>
+       <h3>e.</h3>
+       <table class="inner">
+            <tbody>
+                <tr>
+                    <td rowspan="3">Title goes here</td>
+                    <td>A</td>
+                    <td>D</td>
+                </tr>
+                <tr>
+                    <td>B</td>
+                    <td>E</td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td>F</td>
+                </tr>
+            </tbody>
+       </table>
+       <h3>f.</h3>
+       <table class="inner2">
+            <tbody>
+                <tr>
+                    <td rowspan="3">Title goes here</td>
+                    <td>A</td>
+                    <td>D</td>
+                </tr>
+                <tr>
+                    <td>B</td>
+                    <td>E</td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td>F</td>
+                </tr>
+            </tbody>
+       </table>
+       <h3>g.</h3>
+       <table>
+            <tbody>
+                <tr>
+                    <td colspan="3" rowspan="2">Title goes here</td>
+                    <td rowspan="2">A</td>
+                    <td rowspan="2">B</td>
+                </tr>
+                <tr>
+                   
+                </tr>
+                <tr>
+                    <td rowspan="3">C</td>
+                    <td>D</td>
+                    <td>E</td>
+                    <td>F</td>
+                    <td>G</td>
+                </tr>
+                <tr>
+                   <td>H</td>
+                   <td colspan="2">I</td>
+                   <td rowspan="2">J</td>
+                </tr>
+                <tr>
+                    <td>K</td>
+                    <td>L</td>
+                    <td>M</td>
+                </tr>
+                <tr>
+                    <td>N</td>
+                    <td colspan="4">O</td>
+                </tr>
+            </tbody>
+
+       </table>
+    </body>
+</html>
