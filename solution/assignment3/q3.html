@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question 3</title>
+  </head>
+  <body>
+    <h2>Welcome to the 24x7 Fitness Club : Courts Reservation Page!!</h2>
+    <div>
+      <form action="" method="">
+        <fieldset>
+          <legend>Member Demographics</legend>
+          <p>Name <input type="text" id="name" required pattern="[A-Z][a-z]+\s[A-Z][a-z]+"/></p>
+          <p>
+            Are you a Member?<br />
+            <label for="Member"
+              ><input
+                type="radio"
+                name="membership"
+                value="member"
+              />Member</label
+            >
+            <label for="Non-member"
+              ><input
+                type="radio"
+                name="membership"
+                value="nonmember"
+              />Non-member</label
+            >
+          </p>
+        </fieldset>
+        <br />
+        <label id="facility">Facility</label>
+        <select>
+          <datalist id="facility">
+            <option value="badminton">Badminton</option>
+            <option value="squash">Squash</option>
+            <option value="racquetball">Racquetball</option>
+          </datalist>
+        </select>
+        <br />
+        <br />
+        <label id="datetime">Select a reservation date and time:</label><br />
+        <input type="date" name="datetime" /> <input type="time" name="time" />
+        <br />
+        <br />
+        <label for="accept">
+          <input type="checkbox" name="accept" id="accept" />
+          I agree to the club's reservation policy
+        </label>
+        <br />
+        <br />
+        <input type="submit" />
+      </form>
+    </div>
+  </body>
+</html>

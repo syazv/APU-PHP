@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question 1</title>
+  </head>
+  <body>
+    <h2 style="color: blue">A Simple Form</h2>
+    <h3 style="color: blueviolet; font-style: italic">Form Fundamentals</h3>
+    <div>
+      <form action="" method="">
+        <fieldset>
+          <legend>Customer Info</legend>
+          <p>
+            Name: <input type="text" placeholder="Enter your name" required />
+          </p>
+          <p>
+            Telephone:
+            <input type="text" placeholder="Pattern: 1-234-567-8910" required />
+          </p>
+          <p>
+            Email address:
+            <input
+              type="text"
+              placeholder="Enter your email address"
+              required
+            />
+          </p>
+        </fieldset>
+      </form>
+      <form action="" method="">
+        <fieldset>
+          <legend>Books</legend>
+          <select id="books">
+            <option value="">HTML5 Canvas by Steve Fulton & Jeff Fulton</option>
+            <option value="">
+              JavaScript: The Definitive Guide by David Flanagan
+            </option>
+            <option value="">
+              HTML5 Geolocation by Anthony T. Holdener III
+            </option>
+            <option value="">
+              Supercharged JavaScript Graphics by Raffaele Cecco
+            </option>
+            <option value="">HTML5: Up and Running by Mark Pilgrim</option>
+          </select>
+          <p>Quantity (Maximum 5): <input type="number" min="1" max="5" /></p>
+        </fieldset>
+      </form>
+      <input type="submit" value="Submit" autofocus />
+    </div>
+  </body>
+</html>
