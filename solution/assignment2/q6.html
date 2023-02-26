@@ -23,6 +23,12 @@
             table.inner2 td{
                 margin: 30px 30px 30px 30px;
             }
+
+            table, td{border: 1px solid black;}
+		    ol li{margin: 10px;}
+		    .b{border:10px solid black;}
+		    .e td{padding: 20px;}
+		    table.f{border-collapse: separate; border-spacing: 15px;}
         </style>
     </head>
     
@@ -168,5 +174,139 @@
             </tbody>
 
        </table>
+
+       <br>
+       <br>
+
+       <ol style="list-style-type: lower-alpha;">
+		<li>
+			<table class="a">
+				<tr>
+					<td>A</td>
+					<td>B</td>
+					<td>C</td>
+				</tr>
+				<tr>
+					<td>D</td>
+					<td>E</td>
+					<td>F</td>
+				</tr>
+			</table>
+		</li>
+		<li>
+			<table class="b">
+				<tr>
+					<td>A</td>
+					<td>D</td>
+				</tr>
+				<tr>
+					<td>B</td>
+					<td>E</td>
+				</tr>
+				<tr>
+					<td>C</td>
+					<td>F</td>
+				</tr>
+			</table>
+		</li>
+		<li>
+			<table class="c">
+				<tr>
+					<td colspan="3">Title goes here</td>
+				</tr>
+				<tr>
+					<td>A</td>
+					<td>C</td>
+					<td>E</td>
+				</tr>
+				<tr>
+					<td>B</td>
+					<td>D</td>
+					<td>F</td>
+				</tr>
+			</table>
+		</li>
+		<li>
+			<table class="d">
+				<tr>
+					<td rowspan="3">Title goes here</td>
+					<td>A</td>
+					<td>D</td>
+				</tr>
+				<tr>
+					<td>B</td>
+					<td>E</td>
+				</tr>
+				<tr>
+					<td>C</td>
+					<td>F</td>
+				</tr>
+			</table>
+		</li>
+		<li>
+			<table class="e">
+				<tr>
+					<td rowspan="3">Title goes here</td>
+					<td>A</td>
+					<td>D</td>
+				</tr>
+				<tr>
+					<td>B</td>
+					<td>E</td>
+				</tr>
+				<tr>
+					<td>C</td>
+					<td>F</td>
+				</tr>
+			</table>
+		</li>
+		<li>
+			<table class="f">
+				<tr>
+					<td rowspan="3">Title goes here</td>
+					<td>A</td>
+					<td>D</td>
+				</tr>
+				<tr>
+					<td>B</td>
+					<td>E</td>
+				</tr>
+				<tr>
+					<td>C</td>
+					<td>F</td>
+				</tr>
+			</table>
+		</li>
+		<li>
+			<table class="g">
+				<tr>
+					<td colspan="3">Title goes here</td>
+					<td>A</td>
+					<td>B</td>
+				</tr>
+				<tr>
+					<td rowspan="3">C</td>
+					<td>D</td>
+					<td>E</td>
+					<td>F</td>
+					<td>G</td>
+				</tr>
+				<tr>
+					<td>H</td>
+					<td colspan="2">I</td>
+					<td rowspan="2">J</td>
+				</tr>
+				<tr>
+					<td>K</td>
+					<td>L</td>
+					<td>M</td>
+				</tr>
+				<tr>
+					<td>N</td>
+					<td colspan="4">O</td>
+				</tr>
+			</table>
+		</li>
+	</ol>
     </body>
 </html>
