@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercise 19 | CSS Position</title>
+    <style>
+      .parent {
+        border: 2px solid red;
+      }
+
+      .child {
+        border: 2px solid blue;
+        width: 100px;
+        height: 100px;
+        border-radius: 10%;
+        margin: 20px;
+        text-align: center;
+      }
+
+      .one {
+        background-color: grey;
+        position: relative;
+        top: -20px;
+        left: -20px;
+      }
+
+      .two {
+        background-color: blanchedalmond;
+        /* From it's origin position if using relative with it container, if using absolute will follow the body{} or Parent before it*/
+        position: relative; 
+        left: 10px;
+        bottom: 100px;
+      }
+
+      .three {
+        background-color: blueviolet;
+        position: absolute;
+        top: 270px;
+        left: -10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <!-- class ="a b" means the have 2 class properties -->
+      <div class="child one">One</div>
+      <div class="child two">Two</div>
+      <div class="child three">Three</div>
+    </div>
+  </body>
+</html>
