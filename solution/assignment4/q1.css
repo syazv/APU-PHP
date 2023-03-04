@@ -1,0 +1,36 @@
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size:
+        12px;
+    background-color: #CCFFFF;
+    border: 2px black dotted;
+}
+
+h1 {
+    display: table;
+    font-size: 14px;
+    font-variant: small-caps;
+    color: #FF0000;
+    background-color: #00FF00;
+}
+
+/* first letter style of the p */
+p::first-letter {
+    font-size: 20pt;
+}
+
+.income {
+    background-color: grey;
+}
+
+.expenses {
+    background-color: #FF0000;
+}
+
+.profit {
+    background-color: yellow;
+}
+
+div {
+    background-color: white;
+}
