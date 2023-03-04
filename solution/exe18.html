@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-18"/>
+    <title>Exercise 18 | CSS</title>
+    
+    <style>
+        @font-face {
+            font-family: "my-signature";
+            src: url(../media/font/Goodnight-London-Script.ttf);
+        }
+
+        h1 {
+            font-family: "my-signature";
+        }
+
+        body {
+            font-family: verdana, arial, helvetica, sans-serif;
+            font-size: 12px;
+            background-color: #ccffff;
+        }
+
+        p::first-letter {
+            font-size: 200%;
+        }
+
+        span.income {
+            background-color: #cccccc;
+        }
+
+        span.expenses {
+            background-color: #ff0000;
+        }
+
+        span.profit {
+            background-color: #ffff00;
+        }
+
+        #budgetsummary {
+            background-color: #ffffff;
+            border: 2px dotted black;
+        }
+
+    </style>
+  </head>
+  <body>
+    <h1>My Signature</h1>
+
+    <div id="budgetsummary">
+      <p>
+        This is the budget summary for ABC, Inc. In the Year 2005, we had an
+        income of <span class="income">$74,935</span>. We had expenses of
+        <span class="expenses">$41,167</span>. This allowed us to have a profit
+        of <span class="profit">$33,768</span>.
+      </p>
+      <p>
+        In 2000, we had an income of <span class="income">$50,123</span> and
+        expenses of <span class="expenses">$30,796</span>. This allowed us to
+        have a profit of <span class="profit">$19,327</span>.
+      </p>
+      <p>
+        In 1995, we had an income of <span class="income">$35,182</span> and
+        expenses of <span class="expenses">$29,772</span>, for a total profit of
+        <span class="profit">$5,410</span>.
+      </p>
+      <p>
+        In 1990, we had an income of <span class="income">$20,031</span> and
+        expenses of <span class="expenses">$19,271</span>, for a total profit of
+        <span class="profit">$760</span>.
+      </p>
+      <p>
+        As you can see, we are constantly growing. As we move further into the
+        21st century, at ABC, Inc. we think the future is bright!
+      </p>
+    </div>
+  </body>
+</html>
