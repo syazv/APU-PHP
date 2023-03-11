@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exercise 32 | JS - Function</title>
     <script src="exe32.js"></script>
+    <script>
+        var findAge = getAge;
+    </script>
   </head>
   <body>
     <script>
       let ans = prompt("Enter year of birth?");
       if (ans.length > 0) {
-        let yourAge = getAge(ans);
+        let yourAge = findAge(ans);
         alert(`You are ${yourAge} years old!`);
       } else alert("Invalid input!");
     </script>
