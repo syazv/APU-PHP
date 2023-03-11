@@ -1,0 +1,23 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 31 | JS</title>
+  </head>
+  <body>
+    <script>
+      let counter = 0;
+      let sum = 0;
+      let marks = 0;
+      //   do while loop for run first then check the condition
+      do {
+        // repeated action code
+        marks = prompt("Enter marks", "0");
+        if (marks != null) sum += Number(marks);
+        counter++;
+      } while (marks != null);
+      alert(`Average marks = ${sum / (counter - 1)}`);
+    </script>
+  </body>
+</html>
