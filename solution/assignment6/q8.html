@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q8</title>
+  </head>
+  <body>
+    <script>
+      // Prompt the user for the total marks
+      const totalMarks = parseInt(prompt("Enter the total marks: "));
+
+      // Assign a grade based on the range
+      let grade;
+      if (totalMarks >= 89 && totalMarks <= 100) {
+        grade = "A+";
+      } else if (totalMarks >= 79 && totalMarks <= 88) {
+        grade = "A";
+      } else if (totalMarks >= 69 && totalMarks <= 78) {
+        grade = "B";
+      } else if (totalMarks >= 59 && totalMarks <= 68) {
+        grade = "C";
+      } else if (totalMarks >= 0 && totalMarks <= 58) {
+        grade = "F";
+      } else {
+        grade = "Invalid input";
+      }
+
+      // Display the grade in the console
+      console.log(`The grade is ${grade}.`);
+      document.write(`The grade is ${grade}.`);
+    </script>
+  </body>
+</html>
