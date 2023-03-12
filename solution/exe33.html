@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 33 | JS</title>
+  </head>
+  <body>
+    <h3>Radius of Circle: <span>7</span></h3>
+    <button>Show Result: Area</button>
+    <!-- <p>Paragraph 1</p> -->
+    <p id="result">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor optio nobis
+      animi assumenda deleniti. Ab alias molestiae qui provident architecto
+      ipsum nulla vel eum labore earum, deserunt sit incidunt. Autem.
+    </p>
+    <!-- <p>Paragraph 3</p> -->
+  </body>
+</html>
+<script>
+  // var p = document.getElementById("result");
+  // console.log(p.innerText);
+  // var xya = document.querySelector('.edit');
+  // xya.classList.toggle("IsOpen");
+
+  //   var para = document.getElementsByTagName("p");
+  //   var p1 = para[0];
+  //   var p2 = para[1];
+  //   var p3 = para[2];
+
+  //   p2.innerText = "Paragraph 2";
+  //   console.log(p2.innerText);
+
+  let btn = document.querySelector("button");
+
+  /* area() that computes area of circle */
+  var area = function () {
+    let radius = Number(document.getElementsByTagName("span")[0].innerText);
+    let area = Math.PI * Math.pow(radius, 2);
+    document.getElementById("result").innerText = `Area: ${area.toFixed(2)}`;
+  };
+
+  btn.onclick = area;
+</script>
