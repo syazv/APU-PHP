@@ -1,0 +1,12 @@
+HTML5 and CSS3 – Assignment 6
+
+1. Write a JavaScript program to get the website URL.
+2. Write a JavaScript program to compute the sum of the two given integers.
+3. Write a JavaScript program to check from a given integer, whether is positive or negative.
+4. Write a JavaScript program to create a new string adding "JS" in front of a given string. If the given string begins with "JS" then return the original string
+5. Write a JavaScript program to retrieve a part of the string. E.g., hello -> llo.
+6. Write a JavaScript program to check whether a given integer value is in the range 0..99 (inclusive). Return true if it is in the said range, or false.
+7. Write a JavaScript program to find the largest of three given integers.
+8. Write a JavaScript program to check the total marks of a student in various examinations. The student will get A+ grade if the total marks are in the range 89..100 inclusive, and etc.
+9. Write a JavaScript program to reverse a given string.
+10. Write a JavaScript program to find the number of even digits in a given array.
