@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q3 | Assignment 6</title>
+    <style>
+      section {
+        text-align: center;
+        max-width: 480px;
+        margin: 0 auto;
+      }
+
+      #result {
+        margin: 10px;
+        font-size: 20pt;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h2>Positive number?</h2>
+      <label for="n">Enter number</label>
+      <input type="number" id="n" />
+      <button>Check</button>
+      <div id="result"></div>
+    </section>
+  </body>
+</html>
+<script>
+  const btn = document.querySelector("button");
+  btn.addEventListener("click", function () {
+    event.preventDefault();
+    const n = document.querySelector("#n").value;
+    if (n >= 0) {
+      document.querySelector("#result").innerHTML = `Result: Positive`;
+    } else {
+      document.querySelector("#result").innerHTML = `Result: Negative`;
+    }
+  });
+
+  window.addEventListener("load", function () {
+    event.preventDefault();
+    document.querySelector("#n").focus();
+  });
+</script>
