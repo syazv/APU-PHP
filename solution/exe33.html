@@ -32,8 +32,6 @@
   //   p2.innerText = "Paragraph 2";
   //   console.log(p2.innerText);
 
-  let btn = document.querySelector("button");
-
   /* area() that computes area of circle */
   var area = function () {
     let radius = Number(document.getElementsByTagName("span")[0].innerText);
@@ -41,5 +39,9 @@
     document.getElementById("result").innerText = `Area: ${area.toFixed(2)}`;
   };
 
-  btn.onclick = area;
+  var btn = document.querySelector("button");
+  btn.onclick = function(){
+    event.preventDefault;
+    area();
+  }
 </script>
