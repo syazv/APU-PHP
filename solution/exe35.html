@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Execise 35 | JS</title>
+  </head>
+  <body>
+    <h3>Radius of Circle: <input type="number" id="txtRadius" /></h3>
+    <button>Show Result: Area</button>
+    <p id="result"></p>
+  </body>
+</html>
+<script>
+  /* area() that computes area of circle */
+  var area = function () {
+    let radius = Number(document.querySelector("#txtRadius").value);
+    try {
+      if (radius < 0) throw "Negative value is not allowed!";
+      let area = Math.PI * Math.pow(radius, 2);
+      document.getElementById("result").innerText = `Area: ${area.toFixed(2)}`;
+    } catch (error) {
+      alert(error);
+    }
+  };
+
+  /* button click event handling */
+  var btn = document.querySelector("button");
+  btn.onclick = function () {
+    event.preventDefault;
+    area();
+  };
+
+  /* button focus is enabled event handling */
+  btn.addEventListener("focus", function () {
+    event.preventDefault();
+    console.log("Calculator is ready to start!");
+  });
+
+  /* onload event handling */
+  window.addEventListener("load", function () {
+    event.preventDefault();
+    alert("Page is ready!");
+  });
+</script>

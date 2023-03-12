@@ -39,9 +39,22 @@
     document.getElementById("result").innerText = `Area: ${area.toFixed(2)}`;
   };
 
+  /* button click event handling */
   var btn = document.querySelector("button");
-  btn.onclick = function(){
+  btn.onclick = function () {
     event.preventDefault;
     area();
-  }
+  };
+
+  /* button focus is enabled event handling */
+  btn.addEventListener("focus", function () {
+    event.preventDefault();
+    console.log("Calculator is ready to start!");
+  });
+
+  /* onload event handling */
+  window.addEventListener("load", function () {
+    event.preventDefault();
+    alert("Page is ready!");
+  });
 </script>
